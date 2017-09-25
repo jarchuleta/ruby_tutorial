@@ -91,4 +91,6 @@ RSpec.configure do |config|
   # Adding the Capybara DSL to the RSpec helper file.
   config.include Capybara::DSL
   
+  config.include Rails.application.routes.url_helpers
+  
 end
